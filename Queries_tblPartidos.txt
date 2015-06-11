@@ -1,0 +1,29 @@
+CREATE TABLE IF NOT EXISTS `tbl_partidos` (
+  
+`id` int(10) NOT NULL AUTO_INCREMENT,
+  
+`jugador1` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  
+`jugador2` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  
+`fecha_juego` date NOT NULL,
+  
+`resultado` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  
+PRIMARY KEY (`id`)
+) 
+ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=3 
+
+;
+
+--
+-- Volcado de datos para la tabla `tbl_partidos`
+--
+
+
+
+INSERT INTO `tbl_partidos` (`id`, `jugador1`, `jugador2`, `fecha_juego`, `resultado`) VALUES
+			
+(1, '1', '4', '2015-06-09', 'jugador2 Ganador'),
+
+			(2, '3', '6', '2015-06-02', 'jugador1 Ganador');
